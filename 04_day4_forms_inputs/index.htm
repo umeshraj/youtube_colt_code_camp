@@ -35,6 +35,11 @@
     <label for="likesdogs">I like dogs</label>
     <input type="checkbox" name="check" id="likesdogs" />
 
+    <h2>Text area</h2>
+    <textarea name="" id="" cols="30" rows="10">
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit, debitis.</textarea
+    >
+
     <h2>Form Element</h2>
     <hr />
     <form action="">
@@ -54,9 +59,17 @@
     <!-- reddit form -->
     <h2>Reddit search form</h2>
     <form action="https://www.reddit.com/search">
-      <input type="text" name="q" />
-      <button>Submit</button>
-      <input type="submit" value="go" />
+      <label for="search">Search term</label>
+      <input type="text" name="q" id="search" />
+      <!-- select dropdown -->
+      <label for="sort">Sort by</label>
+      <select name="sort" id="sort">
+        <option value="top">Top</option>
+        <option value="new">New</option>
+        <option value="relevance">Relevance</option>
+      </select>
+      <!-- <button>Submit</button> -->
+      <input type="submit" value="Search reddit" />
     </form>
   </body>
 </html>
