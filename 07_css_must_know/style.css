@@ -1,0 +1,81 @@
+/* * {
+  color: teal;
+} */
+
+a {
+  color: pink;
+}
+
+h2 {
+  font-size: 40px;
+  color: purple;
+}
+
+.icon {
+  color: red;
+  font-size: 30px;
+}
+
+img {
+  width: 300px;
+}
+
+#logo {
+  width: 100px;
+}
+
+h1,
+h2 {
+  color: pink;
+}
+
+/* selector list */
+#logo,
+img,
+.icon {
+  border: 2px solid red;
+}
+
+/* descendant */
+ul li {
+  display: inline;
+}
+
+/* adjacent */
+h2 + p {
+  color: orangered;
+}
+
+/* direct descendant */
+p > i {
+  font-size: 30px;
+  color: steelblue;
+}
+
+/* attribute selectors */
+input[type="password"] {
+  border: 2px solid green;
+}
+
+/* attribute w/ fuzzy */
+a[href^="#"] {
+  color: lavender;
+}
+
+/* attribut w/ boolean */
+input[checked] {
+  width: 100px;
+}
+
+/* pseudo classes */
+img:hover {
+  border: 2px solid green;
+}
+
+a:hover {
+  color: purple;
+}
+
+ol .icon:hover {
+  color: yellow;
+}
