@@ -79,3 +79,48 @@ a:hover {
 ol .icon:hover {
   color: yellow;
 }
+
+input:focus {
+  border: 1px solid magenta;
+  outline: none;
+}
+
+footer li:nth-child(2n) {
+  background-color: teal;
+}
+
+footer li:nth-child(2n + 1) {
+  background-color: yellow;
+}
+
+footer li:nth-child(1) {
+  background-color: orange;
+}
+
+a:visited {
+  color: red;
+}
+
+/* pseudo element */
+h1::first-letter {
+  font-size: 50px;
+  color: olive;
+}
+
+h2 + p::first-letter {
+  font-size: 50px;
+  color: olive;
+}
+
+p::selection {
+  background-color: cyan;
+  color: white;
+}
+
+#navbar li::after {
+  content: "->";
+}
+
+#navbar li::before {
+  content: "|";
+}
