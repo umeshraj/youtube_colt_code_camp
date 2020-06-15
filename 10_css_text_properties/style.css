@@ -1,0 +1,54 @@
+h1 {
+  font-size: 60px;
+  text-align: center;
+  font-weight: 400;
+  font-style: italic;
+  font-family: Verdana;
+  text-decoration: underline pink wavy;
+  text-transform: lowercase;
+}
+
+p {
+  font-size: 12px;
+  /* line-height: 30px;
+  word-spacing: 20px;
+  letter-spacing: 14px; */
+}
+
+p a {
+  font-size: 20px;
+}
+
+section {
+  font-size: 40px;
+  font-family: "ACD", monospace;
+}
+
+li a {
+  /* display: inline-block; */
+  width: 300px;
+  text-align: right;
+}
+
+#brand {
+  letter-spacing: 5px;
+  text-decoration: none;
+}
+
+nav,
+ul,
+li {
+  display: inline-block;
+}
+
+ul a {
+  font-size: 15px;
+  color: gray;
+  margin: 0 10px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 80px;
+  text-shadow: 10px 10px 5px magenta, -10px -10px cyan;
+}
