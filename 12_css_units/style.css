@@ -1,0 +1,32 @@
+h1 {
+  font-size: 80px;
+  background-color: lavender;
+  line-height: 50%;
+}
+
+#stuff {
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 3em;
+  border: 4px dashed orangered;
+  height: 3em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+p {
+  font-size: 0.8em;
+}
+
+#gallery {
+  width: 1000px;
+  border: 3px solid red;
+}
+
+img {
+  width: 33%;
+}
