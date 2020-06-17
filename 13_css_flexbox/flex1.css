@@ -9,7 +9,7 @@
   font-family: lato;
   font-weight: 300;
   box-sizing: border-box;
-  width: 400px;
+  width: 300px;
 }
 
 .box-1 {
@@ -41,13 +41,14 @@
 }
 
 /*  LAYOUT STYLES */
-/* .container {
+.container {
   display: flex;
   border: 8px solid black;
   height: 80vh;
   flex-direction: row;
   flex-wrap: wrap;
-} */
+  justify-content: flex-end;
+}
 
 /* homework */
 /* .container {
