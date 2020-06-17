@@ -49,10 +49,11 @@
   display: flex;
   border: 8px solid black;
   height: 80vh;
-  flex-direction: column;
-  flex-wrap: wrap-reverse;
-  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
+  align-content: flex-start;
 }
 
 /* homework */
