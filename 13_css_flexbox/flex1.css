@@ -9,7 +9,12 @@
   font-family: lato;
   font-weight: 300;
   box-sizing: border-box;
-  width: 300px;
+  flex-basis: 50%;
+  /* width: 300px; */
+}
+
+.box:nth-child(3n) {
+  flex-basis: 100%;
 }
 
 .box-1 {
@@ -22,7 +27,7 @@
 }
 .box-3 {
   background: #f0a30a;
-  align-self: stretch;
+  /* align-self: stretch; */
   /* font-size: 2.3em; */
 }
 .box-4 {
