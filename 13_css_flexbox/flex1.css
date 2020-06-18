@@ -9,13 +9,14 @@
   font-family: lato;
   font-weight: 300;
   box-sizing: border-box;
-  flex-basis: 50%;
+  flex-basis: 10%;
+  flex-grow: 1;
   /* width: 300px; */
 }
 
-.box:nth-child(3n) {
+/* .box:nth-child(3n) {
   flex-basis: 100%;
-}
+} */
 
 .box-1 {
   background: #e51400;
@@ -27,6 +28,7 @@
 }
 .box-3 {
   background: #f0a30a;
+  flex-grow: 2;
   /* align-self: stretch; */
   /* font-size: 2.3em; */
 }
