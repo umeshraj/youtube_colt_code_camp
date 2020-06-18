@@ -22,6 +22,7 @@
 }
 .box-3 {
   background: #f0a30a;
+  align-self: stretch;
   /* font-size: 2.3em; */
 }
 .box-4 {
@@ -51,9 +52,9 @@
   height: 80vh;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  align-content: flex-start;
+  /* align-content: flex-start; */
 }
 
 /* homework */
