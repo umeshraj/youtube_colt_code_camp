@@ -10,7 +10,9 @@
   font-weight: 300;
   box-sizing: border-box;
   flex-basis: 10%;
-  flex-grow: 1;
+  flex: 1;
+  /* flex-shrink: 1; */
+  /* flex-grow: 2; */
   /* width: 300px; */
 }
 
@@ -20,6 +22,8 @@
 
 .box-1 {
   background: #e51400;
+  order: 2;
+  /* flex-shrink: 10; */
   /* font-size: 1.3em; */
 }
 .box-2 {
@@ -28,7 +32,7 @@
 }
 .box-3 {
   background: #f0a30a;
-  flex-grow: 2;
+  /* flex-grow: 2; */
   /* align-self: stretch; */
   /* font-size: 2.3em; */
 }
@@ -58,7 +62,7 @@
   border: 8px solid black;
   height: 80vh;
   flex-direction: row;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: space-between;
   align-items: center;
   /* align-content: flex-start; */
