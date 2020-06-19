@@ -1,0 +1,49 @@
+/* Breakpoints: 990px and 600px*/
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.flex-container {
+  background-color: lightblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  color: black;
+  border: 1px solid black;
+}
+
+.navigation {
+  list-style-type: none;
+  display: flex;
+}
+
+.navigation li {
+  border: 1px solid black;
+}
+
+.navigation a {
+  color: white;
+  font-size: 1.5em;
+}
+
+@media screen and (max-width: 990px) {
+  .flex-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .navigation {
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navigation {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
