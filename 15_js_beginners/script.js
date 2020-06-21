@@ -27,3 +27,16 @@ if (Math.random() > 0.5) {
 let nums = [23, 45, -1, 10];
 let hens = ["ur", "sx", "as"];
 console.log(hens);
+
+// object literals
+const person = {
+  firstName: "umesh",
+  age: 38,
+};
+
+person["lastName"] = "raj";
+
+// Loops
+for (let i = 0; i < 5; i += 1) {
+  console.log(i);
+}
