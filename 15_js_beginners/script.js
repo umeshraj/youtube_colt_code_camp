@@ -71,25 +71,34 @@ function square(num) {
 console.log(square(7));
 
 // GAME
-const targetNum = Math.floor(Math.random() * 10) + 1;
 
-console.log(`Number is ${targetNum}`);
+function startGame() {
+  const targetNum = generateRandom();
+  console.log(`Number is ${targetNum}`);
 
-let guess = parseInt(prompt("Enter a number"));
-while (Number.isNaN(guess)) {
-  guess = parseInt(prompt("Enter a valid number"));
+  let guess = getInput();
+
+  while (guess !== targetNum) {
+    if (guess > targetNum) {
+      console.log(`${guess} is too high`);
+    } else if (guess < targetNum) {
+      console.log(`${guess} is too low`);
+    }
+    guess = getInput(); 
+  }
+  alert("You win");
 }
 
-while (guess !== targetNum) {
-  if (guess > targetNum) {
-    console.log(`${guess} is too high`);
-  } else if (guess < targetNum) {
-    console.log(`${guess} is too low`);
-  }
-  guess = parseInt(prompt("Guess again"));
+function generateRandom() {
+  return Math.floor(Math.random() * 10) + 1;
+}
+
+function getInput() {
+  let guess = parseInt(prompt("Enter a number"));
   while (Number.isNaN(guess)) {
     guess = parseInt(prompt("Enter a valid number"));
   }
+  return guess;
 }
 
-alert("You win");
+startGame();
