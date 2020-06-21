@@ -40,3 +40,56 @@ person["lastName"] = "raj";
 for (let i = 0; i < 5; i += 1) {
   console.log(i);
 }
+
+// let password = "lol";
+// let guess = prompt("Enter the password");
+
+// while (guess !== password) {
+//   guess = prompt("Enter the password");
+// }
+// alert("You got it right");
+
+// for of loop
+const purchases = [10, 12, 12.12, 1, 90];
+let sum = 0;
+for (let purch of purchases) {
+  sum += purch;
+}
+console.log(sum);
+
+// Functions
+function laugh(loudness = 1, name = "None") {
+  const laughter = "Ha".repeat(loudness);
+  console.log(`${name} says ${laughter}`);
+}
+
+laugh(5, "umesh");
+
+function square(num) {
+  return num ** 2;
+}
+console.log(square(7));
+
+// GAME
+const targetNum = Math.floor(Math.random() * 10) + 1;
+
+console.log(`Number is ${targetNum}`);
+
+let guess = parseInt(prompt("Enter a number"));
+while (Number.isNaN(guess)) {
+  guess = parseInt(prompt("Enter a valid number"));
+}
+
+while (guess !== targetNum) {
+  if (guess > targetNum) {
+    console.log(`${guess} is too high`);
+  } else if (guess < targetNum) {
+    console.log(`${guess} is too low`);
+  }
+  guess = parseInt(prompt("Guess again"));
+  while (Number.isNaN(guess)) {
+    guess = parseInt(prompt("Enter a valid number"));
+  }
+}
+
+alert("You win");
